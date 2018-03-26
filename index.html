@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>役期倒數</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/coming-soon.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="overlay"></div>
+
+    <div class="masthead">
+      <div class="masthead-bg"></div>
+      <div class="container h-100">
+          <div class="col-12 my-auto">
+            <div class="masthead-content text-white">
+			  </br>
+			  </br>
+			  <h1 class="mb-3" style="display: inline" >役期倒數</h1>
+			  </br>
+			  </br>
+			  </br>
+			  </br>
+			  <div class="col-sm">
+				<input type="date" id="finalDateInput" value="2018-08-08" placeholder="2014-09-18" oninput="refresh()">
+			  </div>
+			  </br>
+			  </br>
+              <p class="col-mb-3" style="display: inline">今天日期</p> <div style="display: inline" id="currentDate"></div> </p>
+			  <p class="col-mb-3" style="display: inline">退伍日期</p> <div style="display: inline" id="finalDate"></div> </p>
+			  <p class="col-mb-3" style="display: inline">還剩</p>	<div style="display: inline" id="diffDays"></div> <p class="col-mb-3" style="display: inline">天</p> <p></p>
+			  <p class="col-mb-3" style="display: inline">還剩</p>	<div style="display: inline" id="remainingDays"></div> <p class="col-mb-3" style="display: inline">天在營</p> <p></p>
+			  <p class="col-mb-3" style="display: inline">還剩</p>	<div style="display: inline" id="holidaysCount"></div> <p class="col-mb-3" style="display: inline">天國定假日</p> <p></p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <ul class="list-unstyled text-center mb-0">
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/vide/jquery.vide.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/coming-soon.min.js"></script>
+	<script src="js/calculate.js"></script>
+	<script src="js/refresh.js"></script>
+	
+
+  </body>
+
+</html>
+<script language="JavaScript">
+refresh();
+</script>
