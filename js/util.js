@@ -1,9 +1,15 @@
-function refresh(){
+function initial(){
+	var userFinalDate;
+	if(userFinalDate = localStorage.getItem('UserFinalDate')){
+		document.getElementById("finalDateInput").value = userFinalDate;
+	}
+}
 
+function refresh(){
 	var currentDate = new Date();
+	
 	var finalDateValue = document.getElementById('finalDateInput').value
 	var finalDate = new Date(finalDateValue);
-
 
 	var result = calRemainingPeriod(finalDate,currentDate);
 	var diffDays = result.differenceDays;
@@ -15,5 +21,6 @@ function refresh(){
 	document.getElementById('diffDays').innerHTML = diffDays;
 	document.getElementById('remainingDays').innerHTML = remainingDays;
 	document.getElementById('holidaysCount').innerHTML = holidays;
-
+	//
+	localStorage.setItem('UserFinalDate',finalDateValue);
 }
